@@ -29,7 +29,7 @@ app.get('/slow', function (req, res) {
   This route should always return quickly
 */
 app.get('/fast', function (req, res) {
-  db.collection('test').countDoucments({}, function(err, count) {
+  db.collection('test').countDocuments({}, function(err, count) {
     return res.json({'documentCount': count});
   });
 	
