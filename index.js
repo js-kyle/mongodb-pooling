@@ -10,7 +10,7 @@ mongodb.MongoClient.connect('mongodb://localhost:27017/test', connectionOptions,
   if (err) throw err;
   db = database.db('test');
   // create some documents required for demonstration
-  db.collection('test').insertOne();
+  db.collection('test').insertOne({"a": "b"});
 
   app.listen(process.env.PORT || 3000, function() {
     console.log(`Express.js server up.`);
