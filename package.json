@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/js-kyle/mongodb-pooling#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongodb": "^3.4.0"
   }
 }
